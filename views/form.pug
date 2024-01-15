@@ -1,0 +1,15 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/form.css')
+  body
+    form(method="POST", action="/new")
+      h1 Say Hello!
+      div
+        label Username
+        input(type="text", class="messageUser", name="messageUser")
+      div 
+        label Text 
+        input(type="text", class="messageText", name="messageText")
+      button(type="submit") Submit
